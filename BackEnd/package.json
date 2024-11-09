@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "An E-Commerce application using Node.js, Express, and MongoDB",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+"scripts": {
+  "start": "node server.js",  // Production
+  "dev": "nodemon server.js",  // Development
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vidhisha",
   "license": "ISC",
