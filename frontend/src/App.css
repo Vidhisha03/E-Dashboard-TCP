@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  background-color: beige;
+}
+
+.container {
+  min-height: 100vh;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.nav-ul {
+  padding: 5px;
+  margin: 0;
+  background-color: rgba(15, 109, 171, 0.84);
+}
+
+.nav-ul li {
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav-ul li a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav-ul li a:hover {
+  background-color: rgba(4, 67, 109, 0.842);
+  border-radius: 5px;
+}
+
+.register, .product, .login {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.inputBox {
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  width: 300px;
+  border: 1px solid;
+}
+
+.appbutton {
+  margin: 25px auto;
+  padding: 10px;
+  width: 150px;
+  background-color: rgba(15, 109, 171, 0.84);
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.logo {
+  width: 68px; 
+  float: left;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-list {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 60px;
+}
+
+.product-header,
+.product-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid skyblue;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.product-header li,
+.product-item li {
+  flex: 1 1 150px; 
+  padding: 8px;
+  text-align: center;
+  border-right: 1px solid rgba(15, 109, 171, 0.84);
+}
+
+.product-header li:last-child,
+.product-item li:last-child {
+  border-right: none;
+}
+
+.product-header {
+  list-style: none;
+  background-color: #f0f8ff;
+  font-weight: bold;
+}
+
+.product-item li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.product-item li:nth-child(5) {
+  flex: 1 1 200px; 
+}
+
+button {
+  padding: 5px 10px;
+  background-color: skyblue;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(34, 180, 238)
+}
+
+@media (max-width: 768px) {
+  .nav-ul li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .product-header, .product-item {
+    flex-direction: column;
+  }
+
+  .product-header li, .product-item li {
+    border-right: none;
+    border-bottom: 1px solid skyblue;
+    width: 100%;
+  }
+
+  .product-header li:last-child, .product-item li:last-child {
+    border-bottom: none;
+  }
+}
+
+.search-product-box {
+  width: 400px;
+  margin: 10px;
+  height: 40px;
+  border: 1px solid skyblue;
+  padding: 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  text-align: center;
+  background-color: rgba(15, 109, 171, 0.84);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: 270px;
+}
+
+.footer-socials a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: rgb(144, 67, 216);
+}
+
+.profile {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.profile div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile p {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+}
+
+.profile strong {
+  color: #333;
+  font-weight: 500;
+}
